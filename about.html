@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Le Petit Four</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>Le Petit Four</h1>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Our Menu</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="about-page">
+        <div class="about-header">
+            <h1>Our Story</h1>
+            <p>A journey of passion, tradition, and excellence</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-story">
+                <img src="images/bakery-interior.jpg" alt="Le Petit Four Interior">
+                <div class="story-text">
+                    <h2>The Beginning</h2>
+                    <p>Founded in 2010 by Master Pastry Chef Marie Laurent, Le Petit Four began as a small corner bakery with a big dream: to bring authentic French pastries to the heart of the city.</p>
+                    <p>After years of training in Paris's most prestigious culinary schools and working in renowned French patisseries, Chef Laurent decided to share her passion and expertise with a new audience.</p>
+                </div>
+            </div>
+
+            <div class="about-values">
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-heart"></i>
+                        <h3>Passion</h3>
+                        <p>Every creation is made with love and dedication to the art of French pastry.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-star"></i>
+                        <h3>Quality</h3>
+                        <p>We use only the finest ingredients, sourced locally and imported from France.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-history"></i>
+                        <h3>Tradition</h3>
+                        <p>Our recipes honor centuries-old French baking traditions.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Innovation</h3>
+                        <p>While respecting tradition, we embrace modern techniques and creative flavors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h2>Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="images/chef-marie.jpg" alt="Chef Marie Laurent">
+                        <h3>Marie Laurent</h3>
+                        <p>Founder & Master Pastry Chef</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/chef-pierre.jpg" alt="Chef Pierre Dubois">
+                        <h3>Pierre Dubois</h3>
+                        <p>Head Baker</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/chef-sophie.jpg" alt="Chef Sophie Martin">
+                        <h3>Sophie Martin</h3>
+                        <p>Pastry Chef</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Le Petit Four</h3>
+                <p>Bringing authentic French pastries and desserts to your table since 2010.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <ul>
+                    <li>Monday - Saturday</li>
+                    <li>7:00 AM - 8:00 PM</li>
+                    <li>Sunday</li>
+                    <li>8:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive updates and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Le Petit Four. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

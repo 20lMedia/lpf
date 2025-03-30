@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Le Petit Four</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>Le Petit Four</h1>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Our Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="menu-section">
+        <div class="menu-header">
+            <h1>Our Menu</h1>
+            <p>Discover our selection of authentic French pastries and desserts</p>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+            </div>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Pastries -->
+            <div class="menu-item" data-category="pastries">
+                <img src="images/croissant.jpg" alt="Classic Croissant">
+                <div class="menu-item-content">
+                    <h3>Classic Croissant</h3>
+                    <p>Buttery, flaky layers of hand-laminated pastry</p>
+                    <span class="price">$4.50</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="pastries">
+                <img src="images/pain-au-chocolat.jpg" alt="Pain au Chocolat">
+                <div class="menu-item-content">
+                    <h3>Pain au Chocolat</h3>
+                    <p>Chocolate-filled croissant with rich dark chocolate</p>
+                    <span class="price">$5.00</span>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-item" data-category="desserts">
+                <img src="images/eclair.jpg" alt="Éclair au Chocolat">
+                <div class="menu-item-content">
+                    <h3>Éclair au Chocolat</h3>
+                    <p>Choux pastry filled with chocolate cream</p>
+                    <span class="price">$6.50</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="desserts">
+                <img src="images/macaron.jpg" alt="Macarons">
+                <div class="menu-item-content">
+                    <h3>Macarons</h3>
+                    <p>Assorted flavors of delicate almond meringue cookies</p>
+                    <span class="price">$3.00/piece</span>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="menu-item" data-category="beverages">
+                <img src="images/cafe-au-lait.jpg" alt="Café au Lait">
+                <div class="menu-item-content">
+                    <h3>Café au Lait</h3>
+                    <p>French-style coffee with steamed milk</p>
+                    <span class="price">$4.00</span>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="beverages">
+                <img src="images/hot-chocolate.jpg" alt="Hot Chocolate">
+                <div class="menu-item-content">
+                    <h3>Hot Chocolate</h3>
+                    <p>Rich dark chocolate with steamed milk</p>
+                    <span class="price">$4.50</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Le Petit Four</h3>
+                <p>Bringing authentic French pastries and desserts to your table since 2010.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <ul>
+                    <li>Monday - Saturday</li>
+                    <li>7:00 AM - 8:00 PM</li>
+                    <li>Sunday</li>
+                    <li>8:00 AM - 6:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe to receive updates and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Le Petit Four. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
